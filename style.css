@@ -1,0 +1,27 @@
+/* Add a background to the entire body */
+body {
+    margin: 0; /* Remove default margins */
+    background-image: url('background.jpg'); /* Background image */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent tiling */
+    background-attachment: fixed; /* Optional: Keeps the background fixed while scrolling */
+}
+
+/* Center the canvas on the screen */
+#canvas1 {
+    border: 20px solid white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: block; /* Ensures the canvas is a block-level element */
+    background-color: transparent; /* Make the canvas background transparent to show the body background */
+}
+
+/* Hide game assets by default */
+#beetlemorph, #rhinomorph, #boss, #player, #player_jets {
+    display: none;
+}
